@@ -1,0 +1,313 @@
+.section {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 15% 20% 45% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%; 
+  height: 100%;
+  align-items: center;
+}
+
+
+.strong-bold {
+  font-weight: 950; 
+  color: #ffffff;
+}
+
+  
+  .section h2 {
+    margin-top: 0;
+  }
+
+.SectionImagenSuiza{
+  width: 30vh;
+  height: 20vh;
+  border-radius: 10px;
+  padding: 5px
+}
+/* titulo */
+.sectionTitle{
+  text-align: center;
+  padding-top: 1rem;
+}
+/* SECCION IMAGENES GRID */
+
+.GridImg1{
+  grid-column: 4/5;
+  grid-row: 1;
+  height: 80%;
+  width: 90%;
+  padding: 5px;
+  margin: 3px;  
+}
+
+.GridImg2{
+  grid-column: 2/3;
+  grid-row: 2;
+  height: 80%;
+  width: 90%;
+  padding: 5px;
+  margin: 3px;  
+}
+
+.GridImg3{
+  grid-column: 4/5;
+  grid-row: 3;
+  height: 80%;
+  width: 90%;
+  padding: 5px;
+  margin: 3px;  
+}
+
+.GridImg4{
+  grid-column: 2/3;
+  grid-row: 4;
+  height: 80%;
+  width: 90%;
+  padding: 5px;
+  margin: 3px;  
+}
+
+.SideBarADD{
+grid-column: 1;
+grid-row: 1/5;
+height: 95%;
+width: 90%;
+padding: 5px;
+margin: 3px;  
+
+}
+/* SECCION PARRAFOS GRID */
+.sectionParrafo{
+  grid-column: 2/4;
+  grid-row: 1;
+  padding: 5px;
+  margin: 3px;
+}
+
+.sectionParrafo1{
+  grid-column: 3/5;
+  grid-row: 2;
+  padding: 5px;
+  margin: 3px;
+}
+
+.sectionParrafo2{
+  grid-column: 2/4;
+  grid-row: 3;
+  padding: 5px;
+  margin: 3px;
+}
+
+.sectionParrafo3{
+  grid-column: 3/5;
+  grid-row: 4;
+  padding: 5px;
+  margin: 3px;  
+}
+/* boton */
+.translateButton {
+  grid-column: 3; 
+  grid-row: 5; 
+  justify-self: center; 
+  align-self: center; 
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.translateButton:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 575.98px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 9 
+  }
+
+  .SideBarADD {
+  display: none;
+  }
+  
+  .sectionParrafo{
+    grid-column: 1;
+    grid-row: 1/2;
+  }
+
+    .sectionParrafo1{
+    grid-column: 1;
+    grid-row: 3/4;
+    
+  }
+  
+  .sectionParrafo2{
+    grid-column: 1;
+    grid-row: 5/6;
+    
+  }
+  .sectionParrafo3{
+    grid-column: 1;
+    grid-row: 7/8;
+    
+  }
+  .GridImg1{
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    height: auto;
+  }
+
+  .GridImg2{
+    grid-column: 1;
+    grid-row: 4;
+    width: 100%;
+    height: auto;
+  }
+
+  .GridImg3{
+    grid-column: 1;
+    grid-row: 6;
+    width: 100%;
+    height: auto;
+  }
+
+  .GridImg4{
+    grid-column: 1;
+    grid-row: 8;
+    width: 100%;
+    height: auto;
+  }
+
+  .translateButton {
+    grid-column: 1;
+    grid-row: auto; /
+  }
+}
+
+@media(max-width: 767.98px) {
+  .section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr); 
+  }
+
+  .SideBarADD {
+    display: none;
+  }
+
+  .GridImg1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .sectionParrafo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .GridImg2 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .sectionParrafo1 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .GridImg3 {
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  .sectionParrafo2 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .GridImg4 {
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  .sectionParrafo3 {
+    grid-column: 1;
+    grid-row: 7;
+  }
+
+  .translateButton {
+    grid-column: 1;
+    grid-row: 10;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto; /* Añadida una fila más */
+  }
+
+  .SideBarADD {
+    display: none;
+  }
+
+  .GridImg1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .sectionParrafo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .GridImg2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .sectionParrafo1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .GridImg3 {
+    grid-column: 1/2;
+    grid-row: 3;
+  }
+
+  .sectionParrafo2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .GridImg4 {
+    grid-column: 2/3;
+    grid-row: 4;
+  }
+
+  .sectionParrafo3 {
+    grid-column: 1/2;
+    grid-row: 4;
+  }
+
+  .translateButton {
+    grid-column: 1 / 3;
+    grid-row: 5;
+  }
+}
+
+@media (min-width: 992px) {
+  .section {
+    grid-template-columns: 15% 20% 45% 20%;
+    grid-template-rows: 24% 24% 24% 24% 6%; 
+  }
+}

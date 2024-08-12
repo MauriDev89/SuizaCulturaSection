@@ -1,0 +1,29 @@
+.html {
+    font-size: 10px;
+  }
+  
+  :root {
+    --color-primary: #5e0b42;
+    --color-secundary: #3b0128;
+    --color-terciary: rgb(5, 5, 5);
+    color: rgba(255, 255, 255, 0.87);
+  
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    font-weight: 800;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Mulish", sans-serif;
+    background-color: var(--color-secundary);
+   
+  
+  }
